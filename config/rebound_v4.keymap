@@ -50,7 +50,7 @@
 // | ESC  | ALT | GUI | CAPS|  "  |     |     |       |     |     |      |      |      |      |      | 
 //
 		bindings = < 
-   BT_CLR    BT_SEL 0 BT_SEL 1 BT_SEL 2 BT_SEL 3  BT_SEL 4                  OUT_BLE  OUT_USB  &none     &none     &none     &reset   
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4 &out OUT_BLE  &out OUT_USB  &none     &none     &none     &reset   
    &none     &none    &none    &none    &none     &none         &none       &kp HOME &kp LEFT &kp UP    &kp RIGHT &kp END   &none
    &none     &none    &none    &none    &none     &none         &none       &none    &none    &kp DOWN  &none     &none     &none
    &none     &none    &none    &none    &none     &none         &none       &none    &none    &none     &none     &none     &none
