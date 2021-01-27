@@ -32,7 +32,7 @@
 // | GUI/A | ALT/S | CTL/D | SHFT/F |  G  |  2   |    | TAB  |    |  2  |    H   | SHFT/J | CTL/K | ALT/L | GUI/' |
 // |   Z   |   X   |   C   |    V   |  B  |  3   |    | RET  |    |  3  |    N   |    M   |   ,   |   .   |   /   |
 // | CTRL  |  ALT  |  GUI  |  SHFT  | DEL | BSPC |    | CAPS |    | SPC |optional|   GUI  |  ALT  |  CTRL |   ;   |
-//                         					  
+//                        
 		bindings = <
    &kp ESC     &kp Q      &kp W       &kp E       &kp R   &kp T               &kp Y     &kp U     &kp I       &kp O       &kp P      &none
    &mo 1       &kp A      &kp S       &kp D       &kp F   &kp G     &none     &kp H     &kp J     &kp K       &kp L       &kp SEMI   &kp SQT
