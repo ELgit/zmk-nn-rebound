@@ -50,7 +50,7 @@
 // | ESC  | ALT | GUI | CAPS|  "  |     |     |       |     |     |      |      |      |      |      | 
 //
 		bindings = < 
-   BT CLR    BT1      BT2      BT3      BT4       BT5                       BLE      USB      &none     &none     &none     &none   
+   BT_CLR    BT_SEL 1 BT_SEL 2 BT_SEL 3 BT_SEL 4  BT_SEL 5                  OUT_BLE  OUT_USB  &none     &none     &none     &reset   
    &none     &none    &none    &none    &none     &none         &none       &kp HOME &kp LEFT &kp UP    &kp RIGHT &kp END   &none
    &none     &none    &none    &none    &none     &none         &none       &none    &none    &kp DOWN  &none     &none     &none
    &none     &none    &none    &none    &none     &none         &none       &none    &none    &none     &none     &none     &none
