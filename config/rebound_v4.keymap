@@ -39,7 +39,7 @@
    &hm LGUI BSPC &hm LALT DEL &none     &kp LCTRL   &lt 1 TAB&lt 2 PG_DN  &none     &kp ENTER &lt 1 SPACE&mo 2      &none       &kp BSPC   &kp DEL   
                         >;
 
-			sensor-bindings = <&inc_dec_kp DEL BSPC>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
 
         lower_layer {
