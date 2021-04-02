@@ -27,16 +27,16 @@
 
         default_layer {
 // -------------------------------------------------------------------------------------
-// |    TAB      |    W      |   E   |    R          |  T     |    1        |                |   1          |    Y      |    U      |   I       |   O       |   P   |
-// |    CAPS     |  ALT/S    | CTL/D | SHFT/F        |  G     |    2        | | ESC       |  |   2          |    H      | SHFT/J    | CTL/K     | ALT/L     | GUI/' |
-// |   LSHIFT    |    X      |   C   |    V          |  B     |    3        | | RET       |  |   3          |    N      |    M      |   ,       |   .       |   /   |
-// |             |   `       |       |  LEFT         | RIGHT  |   DEL BKSPC | | GUI SPACE |  |  SPC         |    UP     |   DOWN    |  ALT      |  CTRL     |   ;   |
+// |    TAB      |    W      |   E   |    R          |  T     |    1    |           |   1          |    Y      |    U      |   I       |   O       |   P   |
+// |    CAPS     |  ALT/S    | CTL/D | SHFT/F        |  G     |    2    | | ESC  |  |   2          |    H      | SHFT/J    | CTL/K     | ALT/L     | GUI/' |
+// |   LSHIFT    |    X      |   C   |    V          |  B     |    3    | | RET  |  |   3          |    N      |    M      |   ,       |   .       |   /   |
+// |    CTRL     |   ALT     |  GUI  |  SHFT         | DEL    |   BSPC  | | CAPS |  |  SPC         |    UP     |   DOWN    |  ALT      |  CTRL     |   ;   |
 //                         					  
 		bindings = <
-   &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                        &kp Y           &kp U       &kp I       &kp O       &kp P      &kp LC(T)
-   &kp CAPS      &kp A        &kp S  &kp D           &kp F     &kp G               &kp ESC  &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
-   &kp LSHFT     &kp Z        &kp X  &kp C           &kp V     &kp B               &mo 2    &kp N           &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp MINUS  
-   &none         &kp GRAVE    &none  &kp LEFT        &kp RIGHT &hm 2 DEL BACKSPACE &none    &hm ENTER SPACE &kp UP      &kp DOWN    &kp LBKT    &kp RBKT   &none   
+   &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                &kp Y           &kp U       &kp I       &kp O       &kp P      &kp LC(T)
+   &kp CAPS      &kp A        &kp S  &kp D           &kp F     &kp G       &kp ESC  &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
+   &kp LSHFT     &kp Z        &kp X  &kp C           &kp V     &kp B       &mo 2    &kp N           &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp MINUS  
+   &none         &none        &none  &none           &none     &none       &none    &hm ENTER SPACE &kp UP      &kp DOWN    &kp LBKT    &kp RBKT   &kp DEL   
                         >;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
