@@ -36,7 +36,7 @@
 
         default_layer {
             bindings = <
-            	&lk CAPS
+            	&hm CAPS
         	>;
         };
     };
