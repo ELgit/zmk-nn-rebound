@@ -21,7 +21,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
+	behaviors {
         lk: layer_keytap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_KEYTAP";
