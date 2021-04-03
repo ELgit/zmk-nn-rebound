@@ -29,16 +29,20 @@
             tapping_term_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&to>, <&kp>;
-            sensor-binding = <&CAPS>;
         };
     };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+            bindings = <
+            	&lk CAPS
+        	>;
+        };
+    };
 // -------------------------------------------------------------------------------------
 // |    TAB      |    Q      |   W   |    E          |  R     |    T      |                   |   Y          |    U      |    I      |   O       |   P       |   \   |
-// |    L1 CAPS  |    A      |   S   |    D          |  F     |    G      | | OPTION       |  |   H          |    J      |    K      |   L       |   ;       |  '    |
+// |    L1 Z  |    A      |   S   |    D          |  F     |    G      | | OPTION       |  |   H          |    J      |    K      |   L       |   ;       |  '    |
 // |   LSHIFT    |    X      |   C   |    V          |  B     |    3      | | CTRL ESC     |  |   3          |    N      |    M      |   ,       |   .       | RSHIFT|
 // |   moment 1  |    `      |  TO 1 |  LEFT         | RIGHT  |  DEL BSPC | | CMD SPACE    |  |  ENTER SPACE |    UP     |   DOWN    |   [       |   ]       |moment1|
 //                         					  
