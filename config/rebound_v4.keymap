@@ -33,8 +33,8 @@
 // |   moment 1  |    `      |  TO 1 |  LEFT         | RIGHT  |  DEL BSPC | | CMD SPACE    |  |  ENTER SPACE |    UP     |   DOWN    |   [       |   ]       |moment1|
 //                         					  
 		bindings = <
-   &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P      &kp BSLH
-   &lt LAYER 1 CAPS    &kp A        &kp S  &kp D           &kp F     &kp G         &kp LALT        &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
+   &lt 1 TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P      &kp BSLH
+   &lt 1 CAPS    &kp A        &kp S  &kp D           &kp F     &kp G         &kp LALT        &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
    &kp LSHFT     &kp Z        &kp X  &kp C           &kp V     &kp B         &hm LCTRL ESC   &kp N           &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp RSHFT  
    &mo 1         &kp GRAVE    &to 1  &kp LEFT        &kp RIGHT &hm DEL BSPC  &hm LGUI SPACE  &hm ENTER SPACE &kp UP      &kp DOWN    &kp LBKT    &kp RBKT   &mo 1   
                         >;
@@ -45,7 +45,7 @@
         nav_layer {
 // ----------------------------------------------------------------------------------
 // |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7        |   8      |  9      |   0    |  -   |
-// |  to 0   |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | END        | LEFT     | DOWN    | RGHT   |      |
+// |         |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | END        | LEFT     | DOWN    | RGHT   |      |
 // | LSHIFT  |            |           |  DOWN       |            |           |   | CTRL ESC  |  |               |            |   ,      |   .     |   /    |RSHIFT|
 // |         |            | TO 0      |             |  "         |  DEL BSPC |   | CMD SPACE |  | ENTER SPACE   |            |          |         |        |      | 
 //
