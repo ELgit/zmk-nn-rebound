@@ -22,9 +22,9 @@
         };
     };
 
-        lkt: layer key tap {
+        lk: layer_keytap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYERTO_KEYTAP";
+            label = "LAYER_KEYTAP";
             #binding-cells = <2>;
             tapping_term_ms = <175>;
             flavor = "tap-preferred";
@@ -43,7 +43,7 @@
 //                         					  
 		bindings = <
    &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P      &kp BSLH
-   &lkt 1 CAPS     &kp A        &kp S  &kp D           &kp F     &kp G         &kp LALT        &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
+   &lk 1 CAPS     &kp A        &kp S  &kp D           &kp F     &kp G         &kp LALT        &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
    &kp LSHFT     &kp Z        &kp X  &kp C           &kp V     &kp B         &hm LCTRL ESC   &kp N           &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp RSHFT  
    &mo 1         &kp GRAVE    &to 1  &kp LEFT        &kp RIGHT &hm DEL BSPC  &hm LGUI SPACE  &hm ENTER SPACE &kp UP      &kp DOWN    &kp LBKT    &kp RBKT   &mo 1   
                         >;
