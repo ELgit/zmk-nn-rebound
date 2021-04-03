@@ -28,13 +28,13 @@
         default_layer {
 // -------------------------------------------------------------------------------------
 // |    TAB      |    Q      |   W   |    E          |  R     |    T      |                   |   Y          |    U      |    I      |   O       |   P       |   \   |
-// |    CAPS     |    A      |   S   |    D          |  F     |    G      | | OPTION       |  |   H          |    J      |    K      |   L       |   ;       |  '    |
+// |    L1 CAPS  |    A      |   S   |    D          |  F     |    G      | | OPTION       |  |   H          |    J      |    K      |   L       |   ;       |  '    |
 // |   LSHIFT    |    X      |   C   |    V          |  B     |    3      | | CTRL ESC     |  |   3          |    N      |    M      |   ,       |   .       | RSHIFT|
 // |   moment 1  |    `      |  TO 1 |  LEFT         | RIGHT  |  DEL BSPC | | CMD SPACE    |  |  ENTER SPACE |    UP     |   DOWN    |   [       |   ]       |moment1|
 //                         					  
 		bindings = <
    &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P      &kp BSLH
-   &kp CAPS      &kp A        &kp S  &kp D           &kp F     &kp G         &kp LALT        &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
+   &lt 0 CAPS    &kp A        &kp S  &kp D           &kp F     &kp G         &kp LALT        &kp H           &kp J       &kp K       &kp L       &kp SEMI   &kp SQT
    &kp LSHFT     &kp Z        &kp X  &kp C           &kp V     &kp B         &hm LCTRL ESC   &kp N           &kp M       &kp COMMA   &kp DOT     &kp FSLH   &kp RSHFT  
    &mo 1         &kp GRAVE    &to 1  &kp LEFT        &kp RIGHT &hm DEL BSPC  &hm LGUI SPACE  &hm ENTER SPACE &kp UP      &kp DOWN    &kp LBKT    &kp RBKT   &mo 1   
                         >;
@@ -45,13 +45,13 @@
         nav_layer {
 // ----------------------------------------------------------------------------------
 // |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7        |   8      |  9      |   0    |  -   |
-// |         |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | END        | LEFT     | DOWN    | RGHT   |      |
+// |  to 0   |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | END        | LEFT     | DOWN    | RGHT   |      |
 // | LSHIFT  |            |           |  DOWN       |            |           |   | CTRL ESC  |  |               |            |   ,      |   .     |   /    |RSHIFT|
 // |         |            | TO 0      |             |  "         |  DEL BSPC |   | CMD SPACE |  | ENTER SPACE   |            |          |         |        |      | 
 //
 		bindings = < 
    &kp EQUAL  &kp N1      &kp N2        &kp N3        &kp N4       &kp N5                       &kp N6           &kp N7     &kp N8     &kp N9     &kp N0   &kp MINUS
-   &none      &none       &kp LEFT      &kp UP        &kp RIGHT    &none         &kp LALT       &none            &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &none
+   &to 0      &none       &kp LEFT      &kp UP        &kp RIGHT    &none         &kp LALT       &none            &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &none
    &kp LSHFT  &none       &none         &kp DOWN      &none        &none         &hm LCTRL ESC  &none            &none      &kp COMMA  &kp DOT    &kp FSLH &kp RSHFT
    &none      &none       &to 0         &none         &none        &hm DEL BSPC  &hm LGUI SPACE &hm ENTER SPACE  &none      &none      &none      &none    &none
                         >;
