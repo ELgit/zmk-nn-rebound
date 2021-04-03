@@ -55,13 +55,13 @@
         nav_layer {
 // ----------------------------------------------------------------------------------
 // |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7       |   8      |  9      |   0    |   -    |
-// | to L0   |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | END       | LEFT     | DOWN    | RGHT   |        |
+// | to L0   |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | END / L0  | LEFT     | DOWN    | RGHT   |        |
 // | LSHIFT  |            |           |  DOWN       |            |           |   | CTRL ESC  |  |               |           |   ,      |   .     |   /    | RSHIFT |
 // |         |            | TO 0      |             |  "         |  DEL BSPC |   | CMD SPACE |  | ENTER SPACE   |           |          |         |        |        | 
 //
 		bindings = < 
    &kp EQUAL  &kp N1      &kp N2        &kp N3        &kp N4       &kp N5                       &kp N6           &kp N7     &kp N8     &kp N9     &kp N0   &kp MINUS
-   &to 0      &none       &kp LEFT      &kp UP        &kp RIGHT    &none         &hm LCTRL ESC  &none            &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &none
+   &to 0      &none       &kp LEFT      &kp UP        &kp RIGHT    &none         &hm LCTRL ESC  &none            &lk HOME 0 &kp PG_UP  &kp PG_DN  &kp END  &none
    &kp LSHFT  &none       &none         &kp DOWN      &none        &none         &kp LALT       &none            &none      &kp COMMA  &kp DOT    &kp FSLH &kp RSHFT
    &none      &none       &to 0         &none         &none        &hm DEL BSPC  &hm LGUI SPACE &hm ENTER SPACE  &none      &none      &none      &none    &none
                         >;
