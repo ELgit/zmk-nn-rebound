@@ -29,7 +29,7 @@
 // -------------------------------------------------------------------------------------
 // |    TAB      |    Q      |   W   |    E          |  R     |    T      |                   |   Y          |    U      |    I      |   O       |   P       |   \   |
 // |    CAPS     |    A      |   S   |    D          |  F     |    G      | | OPTION       |  |   H          |    J      |    K      |   L       |   ;       |  '    |
-// |   LSHIFT    |    X      |   C   |    V          |  B     |    3      | | CTRL ESC     |  |   3          |    N      |    M      |   ,       |   .       |   /   |
+// |   LSHIFT    |    X      |   C   |    V          |  B     |    3      | | CTRL ESC     |  |   3          |    N      |    M      |   ,       |   .       | RSHIFT|
 // |             |    `      |  TO 1 |  LEFT         | RIGHT  |  DEL BSPC | | CMD SPACE    |  |  ENTER SPACE |    UP     |   DOWN    |   [       |   ]       |       |
 //                         					  
 		bindings = <
@@ -44,16 +44,16 @@
 
         nav_layer {
 // ----------------------------------------------------------------------------------
-// |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7        |   8      |  9      |   0    |  -   |
-// |         |            |  LEFT     |  UP         |  RIGHT     |           |   |           |  |               | END        | LEFT     | DOWN    | RGHT   |      |
-// |         |            |           |  DOWN       |            |           |   |           |  |               |            |          |         |        |      |
-// |         |            | TO 0      |             |  "         |           |   |           |  |               |            |          |         |        |      | 
+// |  =      |  1         |  2        |  3          |  4         |  5        |                    |   6           |   7       |   8      |  9      |   0    |  -     |
+// |         |            |  LEFT     |  UP         |  RIGHT     |           |   |   OPTION    |  |               | END       | PG UP    | PG DWN  | END    |        |
+// | L SHIFT |            |           |  DOWN       |            |           |   |  CTRL ESC   |  |               |           |    ,     |   .     |   /    | R SHIFT|
+// |         |            | TO 0      |             |  "         | DEL BKSPC |   |  CMD SPACE  |  | ENTER SPACE   |           |          |         |        |        | 
 //
 		bindings = < 
-   &kp EQUAL  &kp N1      &kp N2        &kp N3        &kp N4       &kp N5                       &kp N6           &kp N7     &kp N8     &kp N9     &kp N0   &kp MINUS
-   &none      &none       &kp LEFT      &kp UP        &kp RIGHT    &none         &kp LALT       &none            &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &none
-   &none      &none       &none         &kp DOWN      &none        &none         &hm LCTRL ESC  &none            &none      &none      &none      &none    &none
-   &none      &none       &to 0         &none         &none        &hm DEL BSPC  &hm LGUI SPACE &hm ENTER SPACE  &none      &none      &none      &none    &none
+   &kp EQUAL  &kp N1      &kp N2        &kp N3        &kp N4       &kp N5                         &kp N6           &kp N7     &kp N8     &kp N9     &kp N0   &kp MINUS
+   &none      &none       &kp LEFT      &kp UP        &kp RIGHT    &none         &kp LALT         &none            &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &none
+   &kp LSHFT  &none       &none         &kp DOWN      &none        &none         &hm LCTRL ESC    &none            &none      &kp COMMA  &kp DOT    &kp FSL  &kp RSHFT
+   &none      &none       &to 0         &none         &none        &hm DEL BSPC  &hm LGUI SPACE   &hm ENTER SPACE  &none      &none      &none      &none    &none
                         >;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
