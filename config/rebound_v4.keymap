@@ -54,16 +54,16 @@
 
         nav_layer {
 // ----------------------------------------------------------------------------------
-// |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7       |   8       |  9      |   0    |   -    |
-// | to L0   |            |  LEFT     |  UP         | L0to RIGHT |           |   | OPTION    |  |               | L0to HOME | PG UP     | PG DN   | END    |        |
-// | LSHIFT  |            |           |  DOWN       |            |           |   | CTRL ESC  |  |               |           |   ,       |   .     |   /    | RSHIFT |
-// |         |            | TO 0      |             |  BSPACE    |  DELETE   |   | CMD SPACE |  |  ENTER        |    SPACE  |   UP/DOWN |         |        |        | 
+// |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7       |   8       |  9      |   0            |   -    |
+// | to L0   |            |  LEFT     |  UP         | L0to RIGHT |           |   | OPTION    |  |               | L0to HOME | PG UP     | PG DN   | END            |        |
+// | LSHIFT  |            |           |  DOWN       |            |           |   | CTRL ESC  |  |               |           |   ,       |   .     |   / RSHIFT     | RSHIFT |
+// |         |            | TO 0      |             |  BSPACE    |  DELETE   |   | CMD SPACE |  |  ENTER        |    SPACE  |   UP/DOWN |         |                |        | 
 //
 		bindings = < 
-   &kp EQUAL  &kp N1      &kp N2        &kp N3         &kp N4      &kp N5                        &kp N6          &kp N7      &kp N8      &kp N9     &kp N0   &kp MINUS
-   &to 0      &none       &kp LEFT      &kp UP         &lk 0 RIGHT   &none         &hm LCTRL ESC   &none           &lk 0 HOME  &kp PG_UP   &kp PG_DN  &kp END  &none
-   &kp LSHFT  &none       &none         &kp DOWN       &none       &none         &kp LALT        &none           &none       &kp COMMA   &kp DOT    &kp FSLH &kp RSHFT
-   &none      &none       &to 0         &hm LEFT RIGHT &kp BSPC    &kp DEL       &hm LGUI SPACE  &kp ENTER       &kp SPACE   &hm UP DOWN &none      &none    &none
+   &kp EQUAL  &kp N1      &kp N2        &kp N3         &kp N4      &kp N5                        &kp N6          &kp N7      &kp N8      &kp N9     &kp N0         &kp MINUS
+   &to 0      &none       &kp LEFT      &kp UP         &lk 0 RIGHT  &none         &hm LCTRL ESC  &none           &lk 0 HOME  &kp PG_UP   &kp PG_DN  &kp END        &none
+   &kp LSHFT  &kp LSHFT   &none         &kp DOWN       &none       &none          &kp LALT       &none           &none       &kp COMMA   &kp DOT    &hm RSHFT FSLH &kp RSHFT
+   &none      &none       &to 0         &hm LEFT RIGHT &kp BSPC    &kp DEL        &hm LGUI SPACE &kp ENTER       &kp SPACE   &hm UP DOWN &none      &none          &none
                         >;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
