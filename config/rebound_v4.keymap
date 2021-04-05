@@ -77,9 +77,9 @@
 // |                   |                     |              L0       |                     |  BSPACE             |       DELETE        | |  CMD SPACE | |     ENTER      |    SPACE   |     0     |     .    |     =      |   BKSPC    |
 //                                            
 		bindings = <
-   &kp LG(LS(LA(KP_N7))) &kp LG(LS(LA(KP_N2)))  &kp LG(LS(LA(KP_N1)))  &kp LG(LS(LA(KP_N4))) &kp LG(LS(LA(KP_N3))) &kp LG(LS(LA(KP_N9)))                  &kp KP_CLEAR     &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE
-   &to 0                 &none                &kp LEFT                 &lk 0 UP              &lk 0 RIGHT           &none                 &hm LCTRL ESC    &none            &lk 0 KP_N4 &lk 0 KP_N5 &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY
-   &kp LSHFT             &none                &none                    &kp DOWN              &none                 &none                 &kp LALT         &none            &kp KP_N1   &kp KP_N2   &kp KP_N3  &kp KP_EQUAL  &none
+   &kp LG(LS(LA(KP_N7))) &kp LG(LS(LA(KP_N2)))  &kp LG(LS(LA(KP_N1)))  &kp LG(LS(LA(KP_N4))) &kp LG(LS(LA(KP_N3))) &kp LG(LS(LA(KP_N9)))                  &kp KP_CLEAR     &kp N7      &kp N8      &kp N9     &kp MINUS     &kp DIVIDE
+   &to 0                 &none                &kp LEFT                 &lk 0 UP              &lk 0 RIGHT           &none                 &hm LCTRL ESC    &none            &lk 0 N4    &lk 0 N5    &kp N6     &kp KP_PLUS   &kp KP_MULTIPLY
+   &kp LSHFT             &none                &none                    &kp DOWN              &none                 &none                 &kp LALT         &none            &kp N1      &kp N2      &kp N3     &kp KP_EQUAL  &none
    &none                 &none                &to 0                    &hm LEFT RIGHT        &kp BSPC              &kp DEL               &hm LGUI SPACE   &kp ENTER        &kp SPACE   &kp KP_N0   &kp KP_DOT &kp KP_EQUAL  &kp BSPC
                         >;
 
