@@ -38,7 +38,7 @@
      
 // -------------------------------------------------------------------------------------
 // |    TAB      |    Q      |   W   |    E          |  R     |    T      |                   |   Y          |    U      |    I      |   O       |   P          |   \   |
-// |   CAPS      |  A / L1mo |   S   |    D / L2     | F / L1 |    G      | | OPTION       |  |   H          |    J / L1 |    K / L2 |   L       |   ; L1mo        |  '    |
+// |   CAPS      |  L1mo  A  |   S   |   L2to D      | L1to F |    G      | | OPTION       |  |   H          |  L1to  J  |   L2to K  |   L       |  L1mo ;      |  '    |
 // |   LSHIFT    |    Z LSHFT|   X   |    C          |  V     |    B      | | CTRL ESC     |  |   N          |    M      |    ,      |   .       |   / RSHIFT   | RSHIFT|
 // |   moment 1  |    `      |  TO 2 |  LEFT         | BSPACE |  DELETE   | | CMD SPACE    |  |  ENTER       |    SPACE  |   UP/DOWN |   [       |   ]          |moment1|
 //                         					  
@@ -55,13 +55,13 @@
         nav_layer {
 // ----------------------------------------------------------------------------------
 // |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7       |   8       |  9      |   0    |   -    |
-// | to L0   |            |  LEFT     |  UP         |  RIGHT     |           |   | OPTION    |  |               | 0 HOME    | PG UP     | PG DN   | END    |        |
+// | to L0   |            |  LEFT     |  UP         | L0to RIGHT |           |   | OPTION    |  |               | L0to HOME | PG UP     | PG DN   | END    |        |
 // | LSHIFT  |            |           |  DOWN       |            |           |   | CTRL ESC  |  |               |           |   ,       |   .     |   /    | RSHIFT |
 // |         |            | TO 0      |             |  BSPACE    |  DELETE   |   | CMD SPACE |  |  ENTER        |    SPACE  |   UP/DOWN |         |        |        | 
 //
 		bindings = < 
    &kp EQUAL  &kp N1      &kp N2        &kp N3         &kp N4      &kp N5                        &kp N6          &kp N7      &kp N8      &kp N9     &kp N0   &kp MINUS
-   &to 0      &none       &kp LEFT      &kp UP         &kp RIGHT   &none         &hm LCTRL ESC   &none           &lk 0 HOME  &kp PG_UP   &kp PG_DN  &kp END  &none
+   &to 0      &none       &kp LEFT      &kp UP         &lk 0 RIGHT   &none         &hm LCTRL ESC   &none           &lk 0 HOME  &kp PG_UP   &kp PG_DN  &kp END  &none
    &kp LSHFT  &none       &none         &kp DOWN       &none       &none         &kp LALT        &none           &none       &kp COMMA   &kp DOT    &kp FSLH &kp RSHFT
    &none      &none       &to 0         &hm LEFT RIGHT &kp BSPC    &kp DEL       &hm LGUI SPACE  &kp ENTER       &kp SPACE   &hm UP DOWN &none      &none    &none
                         >;
@@ -71,16 +71,16 @@
 
         NumApp_layer {
 // -----------------------------------------------------------------------------------------
-// | TO DOS            |                     |                       |                     |                     |                     |                |      CLR       |     7     |     8    |     9    |     -      |     ÷      |
-// |  L0               |                     |             LEFT      |    UP               |  RIGHT / L0         |                     | |  OPTION    | |                |     4     |     5    |     6    |     +      |     *      |
-// | LSHIFT            |                     |                       |   DOWN              |                     |                     | |  CTRL ESC  | |                |     1     |     2    |     3    |     =      |            |
-// |                   |                     |              L0       |                     |  BSPACE             |       DELETE        | |  CMD SPACE | |     ENTER      |    SPACE  |     0    |     .    |     =      |   BKSPC    |
+// | LAUNCH TO DOS     |   LAUNCH CONTACTS   |   LAUNCH CALENDAR     | LAUNCH BROWSER      | LAUNCH EMAIL        |  LAUNCH TEXTING     |                |      CLR       |     7      |     8     |     9    |     -      |     ÷      |
+// |  L0to             |                     |             LEFT      |   L0to UP           |  L0to RIGHT         |                     | |  OPTION    | |                |  L0to 4    |  L0to 5   |     6    |     +      |     *      |
+// | LSHIFT            |                     |                       |   DOWN              |                     |                     | |  CTRL ESC  | |                |     1      |     2     |     3    |     =      |            |
+// |                   |                     |              L0       |                     |  BSPACE             |       DELETE        | |  CMD SPACE | |     ENTER      |    SPACE   |     0     |     .    |     =      |   BKSPC    |
 //                                            
 		bindings = <
-   &kp LG(LS(LA(KP_N7))) &kp LG(LS(LA(KP_N2)))  &kp LG(LS(LA(KP_N1)))  &kp LG(LS(LA(KP_N4))) &kp LG(LS(LA(KP_N3))) &kp LG(LS(LA(KP_N9)))                  &kp KP_CLEAR     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE
-   &to 0                 &none                &kp LEFT                 &kp UP                &lk 0 RIGHT           &none                 &hm LCTRL ESC    &none            &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY
-   &kp LSHFT             &none                &none                    &kp DOWN              &none                 &none                 &kp LALT         &none            &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL  &none
-   &none                 &none                &to 0                    &hm LEFT RIGHT        &kp BSPC              &kp DEL               &hm LGUI SPACE   &kp ENTER        &kp SPACE   &kp KP_N0 &kp KP_DOT &kp KP_EQUAL  &kp BSPC
+   &kp LG(LS(LA(KP_N7))) &kp LG(LS(LA(KP_N2)))  &kp LG(LS(LA(KP_N1)))  &kp LG(LS(LA(KP_N4))) &kp LG(LS(LA(KP_N3))) &kp LG(LS(LA(KP_N9)))                  &kp KP_CLEAR     &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE
+   &to 0                 &none                &kp LEFT                 &lk 0 UP              &lk 0 RIGHT           &none                 &hm LCTRL ESC    &none            &lk 0 KP_N4 &lk 0 KP_N5 &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY
+   &kp LSHFT             &none                &none                    &kp DOWN              &none                 &none                 &kp LALT         &none            &kp KP_N1   &kp KP_N2   &kp KP_N3  &kp KP_EQUAL  &none
+   &none                 &none                &to 0                    &hm LEFT RIGHT        &kp BSPC              &kp DEL               &hm LGUI SPACE   &kp ENTER        &kp SPACE   &kp KP_N0   &kp KP_DOT &kp KP_EQUAL  &kp BSPC
                         >;
 
 			sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
