@@ -46,7 +46,7 @@
    &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P          &kp BSLH
    &kp CAPS      &lt 1 A      &kp S  &lk 2 D         &lk 1 F   &kp G         &hm LCTRL ESC   &kp H           &lk 1 J     &lt 2 K     &kp L       &lt 1 SEMI     &lt 1 SQT
    &kp LSHFT     &hm LSHFT Z  &kp X  &kp C           &kp V     &kp B         &kp LALT        &kp N           &kp M       &kp COMMA   &kp DOT     &hm RSHFT FSLH &kp RSHFT  
-   &mo 1         &kp GRAVE    &to 2  &hm LEFT RIGHT  &kp BSPC  &kp DEL       &hm LGUI SPACE  &kp ENTER       &kp SPACE   &hm UP DOWN &kp LBKT    &kp RBKT       &mo 1   
+   &mo 1         &kp GRAVE    &to 2  &hm LEFT RIGHT  &kp DEL  &kp BSPC       &hm LGUI SPACE  &kp SPACE       &kp ENTER   &hm UP DOWN &kp LBKT    &kp RBKT       &mo 1   
                         >;
 	
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -63,7 +63,7 @@
    &kp EQUAL  &kp N1      &kp N2        &kp N3         &kp N4      &kp N5                        &kp N6          &kp N7      &kp N8      &kp N9     &kp N0         &kp MINUS
    &to 0      &none       &kp LEFT      &kp UP         &lk 0 RIGHT  &none         &hm LCTRL ESC  &none           &lk 0 HOME  &kp PG_UP   &kp PG_DN  &kp END        &none
    &kp LSHFT  &kp LSHFT   &none         &kp DOWN       &none       &none          &kp LALT       &none           &none       &kp COMMA   &kp DOT    &hm RSHFT FSLH &kp RSHFT
-   &none      &none       &to 0         &hm LEFT RIGHT &kp BSPC    &kp DEL        &hm LGUI SPACE &kp ENTER       &kp SPACE   &hm UP DOWN &none      &none          &none
+   &none      &none       &to 0         &hm LEFT RIGHT &kp DEL    &kp BSPC        &hm LGUI SPACE &kp SPACE       &kp ENTER   &hm UP DOWN &none      &none          &none
                         >;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -80,7 +80,7 @@
    &kp LG(LS(LA(KP_N7))) &kp LG(LS(LA(KP_N2)))  &kp LG(LS(LA(KP_N1)))  &kp LG(LS(LA(KP_N4))) &kp LG(LS(LA(KP_N3))) &kp LG(LS(LA(KP_N9)))                  &kp KP_CLEAR     &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE
    &to 0                 &none                &kp LEFT                 &lk 0 UP              &lk 0 RIGHT           &none                 &hm LCTRL ESC    &none            &lk 0 N4    &lk 0 N5    &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY
    &kp LSHFT             &none                &none                    &kp DOWN              &none                 &none                 &kp LALT         &none            &kp KP_N1   &kp KP_N2   &kp KP_N3  &kp KP_EQUAL  &none
-   &none                 &none                &to 0                    &hm LEFT RIGHT        &kp BSPC              &kp DEL               &hm LGUI SPACE   &kp ENTER        &kp SPACE   &kp KP_N0   &kp KP_DOT &kp KP_EQUAL  &kp BSPC
+   &none                 &none                &to 0                    &hm LEFT RIGHT        &kp DEL              &kp BSPC               &hm LGUI ENTER   &kp SPACE        &kp ENTER   &kp KP_N0   &kp KP_DOT &kp KP_EQUAL  &kp BSPC
                         >;
 
 			sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
