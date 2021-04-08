@@ -37,13 +37,13 @@
         default_layer {
      
 // -------------------------------------------------------------------------------------
-// |    TAB      |    Q      |   W   |    E          |  R     |    T      |                   |   Y          |    U      |    I      |   O       |   P          |   \   |
+// | todos TAB   |    Q      |   W   |    E          |  R     |    T      |                   |   Y          |    U      |    I      |   O       |   P          |   \   |
 // |   CAPS      |  L1mo  A  |   S   |   L2to D      | L1to F |    G      | | OPTION       |  |   H          |  L1to  J  |   L2to K  |   L       |  L1mo ;      |  '    |
 // |   LSHIFT    |    Z LSHFT|   X   |    C          |  V     |    B      | | CTRL ESC     |  |   N          |    M      |    ,      |   .       |   / RSHIFT   | RSHIFT|
 // |   moment 1  |    `      |  TO 2 |  LEFT         | BSPACE |  DELETE   | | CMD SPACE    |  |  ENTER       |    SPACE  |   UP/DOWN |   [       |   ]          |moment1|
 //                         					  
 		bindings = <
-   &kp TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P          &kp BSLH
+   &kp LG(LS(LA(KP_N7))) TAB       &kp Q        &kp W  &kp E           &kp R     &kp T                         &kp Y           &kp U       &kp I       &kp O       &kp P          &kp BSLH
    &kp CAPS      &lt 1 A      &kp S  &lk 2 D         &lk 1 F   &kp G         &hm LCTRL ESC   &kp H           &lk 1 J     &lt 2 K     &kp L       &lt 1 SEMI     &lt 1 SQT
    &kp LSHFT     &hm LSHFT Z  &kp X  &kp C           &kp V     &kp B         &kp LALT        &kp N           &kp M       &kp COMMA   &kp DOT     &hm RSHFT FSLH &kp RSHFT  
    &bt BT_CLR    &kp GRAVE    &to 2  &hm LEFT RIGHT  &kp DEL   &kp BSPC      &hm LGUI SPACE  &kp SPACE       &kp ENTER   &hm UP DOWN &kp LBKT    &kp RBKT       &mo 1   
