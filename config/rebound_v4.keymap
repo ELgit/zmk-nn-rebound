@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping_term_ms = <175>;
+            tapping_term_ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_KEYTAP";
             #binding-cells = <2>;
-            tapping_term_ms = <275>;
+            tapping_term_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&to>, <&kp>;
         };
@@ -56,7 +56,7 @@
 // ----------------------------------------------------------------------------------
 // |  =      |  1         |  2        |  3          |  4         |  5        |                  |   6           |   7        |   8       |   9     |     0         |   -    |
 // | to L0   |            |  LEFT     |  UP         | L0to RIGHT |           |   | CTRL ESC  |  |   HOME        | L0to PG UP | PG DNP    |   END   |      ;        |   END   |
-// | LSHIFT  |            |           |  DOWN       |            |           |   | ALT       |  |               |            |   ,       |   .     |   / RSHIFT    | RSHIFT |
+// | LSHIFT  |  LSHFT     |           |  DOWN       |            |           |   | ALT       |  |               |            |   ,       |   .     |   / RSHIFT    | RSHIFT |
 // |         |            | TO 0      |             |  DELETE    |  BSPACE   |   | CMD SPACE |  |  SPACE        |    ENTER   |   UP/DOWN |         |               |        | 
 //
 		bindings = < 
@@ -71,7 +71,7 @@
 
         NumApp_layer {
 // -----------------------------------------------------------------------------------------
-// | PLY PAUSE| SKIP BK  |   MUTE     |   VOL UP    |  VOL DN     | SKIP FWD  |                 |      CLR       |     7      |     8     |     9    |     -      |     ÷      |
+// | PLY PAUSE| SKIP BK  |   MUTE     |   VOL DN    |  VOL UP     | SKIP FWD  |                 |      CLR       |     7      |     8     |     9    |     -      |     ÷      |
 // |  L0to    |          |  LEFT      |   L0to UP   |  L0to RIGHT |           | |  CTRL ESC   | |                |  L0to 4    |  L0to 5   |     6    |     +      |     *      |
 // | LSHIFT   |          |            |   DOWN      |             |           | |  ALT        | |                |     1      |     2     |     3    |     =      |            |
 // |          |          |   L0       |             |  DELETE     | BSPACE    | |  CMD SPACE  | |     SPACE      |    ENTER   |     0     |     .    |     =      |   BKSPC    |
