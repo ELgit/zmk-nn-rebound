@@ -61,9 +61,9 @@
 //
 		bindings = < 
    &hm PLUS EQUAL  &hm EXCL N1      &hm AT N2        &hm HASH N3         &hm DLLR N4      &hm PRCNT N5                        &hm CARET N6          &hm AMPS N7       &hm ASTRK N8      &hm LPAR N9    &hm RPAR N0         &hm UNDER MINUS
-   &to 0      &kp LSHFT       &kp LEFT      &kp UP         &lk 0 RIGHT  &none         &hm LCTRL ESC  &kp HOME        &lk 0 PG_UP  &kp PG_DN   &kp END   &hm RSHFT SEMI       &kp END
-   &kp LSHFT  &kp LSHFT   &none         &kp DOWN       &none       &none          &kp LALT       &none           &none        &kp COMMA   &kp DOT   &hm RSHFT FSLH &kp RSHFT
-   &none      &none       &to 0         &hm LEFT RIGHT &kp DEL    &kp BSPC        &hm LGUI SPACE &kp SPACE       &kp ENTER    &hm UP DOWN &none     &none          &none
+   &to 0      &kp LSHFT   &kp LEFT      &kp UP         &lk 0 RIGHT  &none         &hm LCTRL ESC  &kp HOME        &lk 0 PG_UP  &kp PG_DN   &kp END   &hm RSHFT SEMI       &kp END
+   &kp LSHFT  &kp LSHFT   &none         &kp DOWN       &none        &none         &kp LALT       &none           &none        &kp COMMA   &kp DOT   &hm RSHFT FSLH &kp RSHFT
+   &none      &none       &to 0         &hm LEFT RIGHT &kp DEL     &kp BSPC       &hm LGUI SPACE &kp SPACE       &kp ENTER    &hm UP DOWN &none     &none          &none
                         >;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -72,15 +72,15 @@
         NumApp_layer {
 // -----------------------------------------------------------------------------------------
 // | PLY PAUSE| SKIP BK  |   MUTE     |   VOL DN    |  VOL UP     | SKIP FWD  |                 |      CLR       |     7      |     8     |     9    |     -      |     ÷      |
-// |  L0to    |          |  LEFT      |   L0to UP   |  L0to RIGHT |           | |  CTRL ESC   | |                |  L0to 4    |  L0to 5   |     6    |     +      |     *      |
+// |  L0to    |   HOME   |            |  L0to PG UP | L0to PG DN  |   END     | |  CTRL ESC   | |                |  L0to 4    |  L0to 5   |     6    |     +      |     *      |
 // | LSHIFT   |          |            |   DOWN      |             |           | |  ALT        | |                |     1      |     2     |     3    |     =      |            |
 // |          |          |   L0       |             |  DELETE     | BSPACE    | |  CMD SPACE  | |     SPACE      |    ENTER   |     0     |     .    |     =      |   BKSPC    |
 //                                            
 		bindings = <
-   &kp C_PP    &kp C_PREV &kp K_MUTE   &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT                         &kp KP_CLEAR     &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE
-   &to 0       &none      &kp LEFT     &lk 0 UP       &lk 0 RIGHT   &none        &hm LCTRL ESC    &none            &lk 0 N4    &lk 0 N5    &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY
+   &kp C_PP    &kp C_PREV &kp K_MUTE   &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT                    &kp KP_CLEAR     &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp KP_DIVIDE
+   &to 0       &kp HOME   &none        &lk 0 PG_UP    &lk 0 PG_DN   &kp END      &hm LCTRL ESC    &none            &lk 0 N4    &lk 0 N5    &kp KP_N6  &kp KP_PLUS   &kp KP_MULTIPLY
    &kp LSHFT   &none      &none        &kp DOWN       &none         &none        &kp LALT         &none            &kp KP_N1   &kp KP_N2   &kp KP_N3  &kp KP_EQUAL  &none
-   &none       &none      &to 0        &hm LEFT RIGHT &kp DEL       &kp BSPC     &hm LGUI ENTER   &kp SPACE        &kp ENTER   &kp KP_N0   &kp KP_DOT &kp KP_EQUAL  &kp BSPC
+   &none       &none      &to 0        &hm LEFT RIGHT &kp DEL       &kp BSPC     &hm LGUI SPACE   &kp SPACE        &kp ENTER   &kp KP_N0   &kp KP_DOT &kp KP_EQUAL  &kp BSPC
                         >;
 
 			sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
