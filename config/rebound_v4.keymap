@@ -104,7 +104,7 @@
 // |         |     BT0    |    BT1     |    BT2      |    NUM           |       |           |       | NUM     |  7       |      8  |      9  |  -   |
 // |   +     |     6      |     5      |     4       |     /            |       | |       | |       |      /  |       4  |      5  |      6  |   +  |
 // |   =     |     3      |     2      |     1       |     *            |       | |       | |       |      *  |       1  |      2  |      3  |   =  |
-// |   RET   |    .       |    0       |    0        |  CLR             |       | |       | |       |    CLR  |    0     |    0    |    .    |  RET | 
+// |   RET   |    .       |     0      |    0        |  CLR             |       | |       | |       |    CLR  |    0     |    0    |    .    |  RET | 
 //                                            
 		bindings = <
    &none     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4             &out OUT_BLE  &out OUT_USB  &none     &none     &none     &reset   
