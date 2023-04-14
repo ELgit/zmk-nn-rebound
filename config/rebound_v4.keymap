@@ -50,7 +50,7 @@
 // | todos TAB   |contacts  Q | cal  W  | safari   E    | mail      | texts  T  |  -----------------------|  |   Y   notes  | excel  U  | word   I  | pdf O     |   P          |   \   |
 // |   CAPS      |  L1mo  A   |   S     |   L2to D      | L1to F    |    G      |  | CTRL ESC             |  |   H          |  L1to  J  |   L2to K  |   L       |  L1mo ;      |  '    |
 // |   LSHIFT    |  Z LSHFT   |   X     |    C          |  V        |    B      |  | ALT screenshot       |  |   N          |    M      |    ,      |   .       |   / RSHIFT   | RSHIFT|
-// |             |    `       |   \     |  LEFT/RIGHT   | BSPSC/DEL |  L1mo BSPACE   |  | CMD SPACE            |  |  SPACE       |    ENTER  |   UP/DOWN |   [       |   ]          |       |
+// |             |    `       |   \     |  LEFT/RIGHT   | BSPSC/DEL |  L1mo BSPACE   |  | CMD SPACE       |  |  SPACE       |    ENTER  |   UP/DOWN |   [       |   ]          |       |
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //                         					  
 		bindings = <
